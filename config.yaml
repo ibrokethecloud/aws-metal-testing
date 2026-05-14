@@ -1,0 +1,12 @@
+scheme_version: 1
+token: token             # Replace with a desired token
+os:
+  hostname: node1        # Set a hostname. This can be omitted if DHCP server offers hostnames.       # Replace with your public key
+  password: p@ssword     # Replace with a your password
+  ntp_servers:
+  - 0.suse.pool.ntp.org
+  - 1.suse.pool.ntp.org
+install:
+  mode: create
+  device: /dev/nvme0n1  
+  iso_url: https://releases.rancher.com/harvester/v1.8.0/harvester-v1.8.0-amd64.iso
